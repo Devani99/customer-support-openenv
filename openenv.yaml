@@ -1,0 +1,13 @@
+name: customer-support-sim
+description: Real-world customer support simulation
+
+entrypoint: app.py
+
+tasks:
+  - easy
+  - medium
+  - hard
+
+observation_space: structured
+action_space: structured
+reward: continuous
