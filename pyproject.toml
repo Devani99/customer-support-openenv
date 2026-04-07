@@ -5,10 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "customer-support-openenv"
 version = "0.1.0"
-description = "OpenEnv customer support simulation environment"
+description = "OpenEnv customer support simulation"
 authors = [{name = "Your Name"}]
+
 dependencies = [
     "fastapi",
     "uvicorn",
-    "pydantic"
+    "pydantic",
+    "openenv>=0.1.13"
 ]
+
+[project.scripts]
+server = "server.app:app"
